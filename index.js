@@ -87,6 +87,11 @@ FCM.cancelAllLocalNotifications = () => {
   RNFIRMessaging.cancelAllLocalNotifications();
 };
 
+// 2017/06/14追加　通知センターの一覧を取得する
+FCM.getDeliveredNotifications = () => {
+  return RNFIRMessaging.getDeliveredNotifications();
+};
+
 FCM.removeDeliveredNotification = (notificationID) => {
   if (!notificationID) {
     return;
