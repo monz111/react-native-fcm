@@ -96,7 +96,7 @@ FCM.removeDeliveredNotification = (notificationID) => {
   if (!notificationID) {
     return;
   }
-  RNFIRMessaging.removeDeliveredNotification(notificationID);
+  RNFIRMessaging.removeDeliveredNotifications(notificationID);
 };
 
 FCM.removeAllDeliveredNotifications = () => {
